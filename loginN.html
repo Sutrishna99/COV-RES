@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+ <title>COV-RES</title>
+ <link rel="stylesheet" href="loginN.css"> 
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Kaisei+Opti:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/8dbee05428.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+<!--------------- function declaration for signIN -----------------><!-- 
+<script type="text/javascript">
+
+function login() 
+{
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+var password2 = document.getElementById("password2").value;
+
+
+            if(password == password2)
+            {
+            var myWindow1 = window.open("home.html","_self");
+            alert("You've logged in successfully");
+            }
+            else
+            {
+            var myWindow2 = window.open("loginN.html","_self");
+             alert("your password doesn't match");
+            } 
+}
+</script> -->
+
+<!------------- function declaration for logIN ----------------->
+<script type="text/javascript">
+function login()
+{    
+    var username = document.getElementById("username").value;
+       var password = document.getElementById("password").value;
+
+      if(((username == "abc") && (password == "123")) || ((username == "def") && (password == "456")) || ((username == "ghi") && (password == "789"))) 
+            {
+            alert("You've logged in successfully");
+            var myWindow1 = window.open("home.html","_self");
+            }
+       else
+            {
+            alert("your login details doesn't match");
+            var myWindow2 = window.open("loginN.html","_self");
+            }
+}
+</script> 
+
+<!---------------------------navbar------------------------------->
+    <section class="header">
+        <nav>
+            <a href="loginN.html"><img src="logoR.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times"onclick="hideMenu()"></i>
+                <!-- <i class="fas fa-times" onclick="hideMenu()"></i>-->
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="help-faq.html">HELP-FAQ</a></li>
+                <li><a href="contactN.html">CONTACT US</a></li>
+                <li><a href="index.html">EXIT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+<!----------------------------Writting--------------------------->
+    <section class="PARA">
+        <h1>COV-RES</h1>
+        <p> Login into our website to communicate with different other people for your needs. Here, you get every piece of information related to covid which not only will reduce the stress of availing information of but also it will make it easier for people to avail different essentials  and emergency services at one-destination. It will help the elderly people to avail services easily at doorsteps, but also the younger working generation, to keep a track of daily-pol of vaccinated, infected, recovered, and death during this pandemic. The website also has flexibility to update from time to time as per need and services.</p>
+    </section>
+
+<!--------------------------- login/signup ---------------------->
+<section class="entery">
+<div class="row">
+
+    <div class="entery-col">
+       <h1>Login</h1>
+       <h3>Please enter your details for Login</h3>
+       <input id="username" placeholder="enter your username">
+       <br><br>
+       <input id="password" placeholder="enter your password">
+       <br><br>
+       <button onclick="login()" id="login_btn">login</button>
+    </div>
+
+    <!-- <div class="entery-col">
+       <h1>Login Up</h1>
+       <h3>Please enter your details for Login</h3>
+       <input id="usernameL" placeholder="enter your username">
+       <br><br>
+       <input id="passwordL" placeholder="enter your password">
+       <br><br>
+       <button onclick="logIn()" id="login-btn">login</button>
+    </div> -->
+
+</div>
+</section>
+<!--------Footer-------->   
+         <section class="footer">
+        <h4>About Us</h4>
+        <p>Health Is Wealth<br>And We Believe It Strogly</p>
+        <div class="icons">
+             <i class="fab fa-facebook"></i>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-instagram"></i>
+             <i class="fab fa-linkedin"></i>
+             </div>
+             <p>Made with <i class="far fa-heart"></i> by team Cov-RES</p>
+        
+         </section>
+        
+        
+        
+<!---------------JavaScript for Toggle Menu------------------>
+        <script>
+            var navlinks= document.getElementById("navlinks");
+         function showMenu(){
+                navlinks.style.right ="0";
+            }
+             function hideMenu(){
+                navlinks.style.right ="-200px";
+            }
+        </script>
+
+
+
+
+
+</body>
+
+
+</html>

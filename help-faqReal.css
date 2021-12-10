@@ -1,0 +1,345 @@
+*{
+   margin: 0;  
+   padding: 0;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.header{
+    min-height: 30vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+nav{
+   display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A52A2A;
+}
+nav img
+{
+    width: 150px;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 14px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+nav .fas
+{
+    display: none;
+}
+
+/*------------------------------------------------------MOBILE-------------------------------------------------------*/
+@media(max-width: 700px)
+{
+.header
+{
+ width: 100%;
+ min-height: 10vh;
+}
+nav img
+{
+    width: 80px;
+}
+.nav-links
+{
+        position: fixed;
+        background: #A52A2A;
+        height: 300vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+}
+.nav-links ul
+{
+        padding: 30px;
+}
+.nav-links ul li
+{
+        display: block;
+} 
+nav .fas
+{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+}
+}
+/*-------------------------------help-----------------------------------*/
+.help
+{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 1px 1px;
+    top: 0px;
+    background-color: #fff;
+}
+.help h1
+{
+    font-size: 36px;
+    color: darkcyan;
+    font-family: 'Holtwood One SC', serif;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+.help-col
+{
+        width: 50%;
+        position: relative;
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: #1c00b5;
+        margin-left: 400px;
+        padding: 20px;
+        margin-top: 20px;
+}
+
+.help-col h3
+{
+    text-decoration: underline;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.help-col p
+{
+    margin: 10px 10px 10px;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+/*--------------------Prevention data with iamges-------------------------*/
+.Picture{
+    margin-left:50px;
+    margin-bottom:50px;
+}
+.row{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.covid-col{
+    flex-basis: 31%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.covid-col img{
+    width: 90%;
+    max-height:70vh ;
+    display: block;
+}
+/* @media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}*/
+/*----------------------------------FAQ----------------------------------*/
+.FAQ
+{
+   
+    position: relative;
+    text-align: left;
+    margin-bottom: 0px;
+}
+.FAQ h2
+{
+    width: 50%;
+    font-size: 36px;
+    color: sandybrown;
+    font-family:'Holtwood One SC', serif;
+    text-decoration: underline;
+    text-align: left;
+    padding-top: 15px;
+}
+.faq-col
+{
+        width: 100%;
+        position: relative;
+        text-align: left;
+        padding-top:5px ;
+}
+.faq-col .far
+{
+        color: blueviolet;
+        color: blueviolet;
+        font-size: 30px;
+}
+.faq-col h3
+{
+        color:#A52A2A ;
+        font-size: 30px;
+        font-weight:600;
+}
+.faq-col p
+{
+        font-size: 24px;
+    
+}
+/*-------------------------------------------------------MOBILE-------------------------------------------------------------*/
+@media(max-width: 700px)
+{
+.help
+{
+    width: 100%;
+    position: relative;
+}
+.help h1
+{
+    font-size: 22px;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.help-col
+{
+    width: 90%;
+    min-height: 15vh;
+    position: relative;
+    margin-left: 20px;
+    background-color: #1c00b5;
+    box-sizing: border-box;
+}
+.help-col h3
+{   
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+}
+.help-col p
+{  
+    color: #fff;
+    font-size: 12px;
+    padding-bottom:10px;
+    padding-left:10px ;
+}
+.FAQ
+{
+    width: 100%;
+
+}
+.FAQ h2
+{
+    width: 100%;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    padding-left:10px ;
+}
+.faq-col
+{
+        width: 100%;
+        padding-top:5px ;
+}
+.faq-col .far
+{
+        color: blueviolet;
+        color: blueviolet;
+        font-size: 18px;
+        padding-left:5px ;
+}
+.faq-col h3
+{
+        font-size: 18px;
+        font-weight:600;
+        padding-left:5px ;
+}
+.faq-col p
+{
+    font-size: 12px;
+    padding-left:10px ;
+}
+}
+
+
+
+/*-------------------------------------------footer-------------------------------------------*/
+.footer
+{
+    background-color: #FDDFDA;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+}
+.footer h4
+{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{}
+.icons .fab
+{
+    color: #A52A2A;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart
+{
+     color: #A52A2A;
+}
+/*----------------------------------------------------------MOBILE----------------------------------------------------------------*/
+@media(max-width: 700px)
+{
+.footer
+{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 100px ;
+    margin-right: 0px;
+}
+.footer h4{}
+.footer p
+{
+    font-size: 15px;
+    text-align: center;
+}
+}

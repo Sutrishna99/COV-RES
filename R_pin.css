@@ -1,0 +1,112 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+.border{
+    margin: 20px;
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+/*--------------nav bar-------------*/
+.header{
+
+    min-height: 5vh;
+    width: 100%;
+    position: relative;   
+}
+
+    nav{
+        margin-top:10px ;
+        width: 30%;
+        margin-left: 500px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        background-color: #A52A2A;
+        color: aliceblue;
+        font-size: 20px;
+    }
+
+
+    /*--------------main district search part-------------*/
+    .MID{
+        background-color: #fff;
+        margin: 10px;
+    }
+
+    .main{
+    
+        font-family: 'Kaisei Opti', serif;
+        font-size:18px;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        padding-left: 180px;
+
+    }
+    .a{
+        text-align: center;
+         background-color: #FDDFDA;
+         box-sizing: border-box;
+        box-shadow: 0 0 30px 0px rgba(0,0,0,0.2);
+        border: 1.5px solid black;
+        border-radius: 5px;
+        width:350px;
+        height: 180px;
+        margin: 10px;
+        padding: 15px;
+    }
+    .main_2{
+       
+        font-family: 'Kaisei Opti', serif;
+        font-size:18px;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        padding-left: 180px;
+    }
+/*@media(max-width: 700px){
+    .a{
+        flex-direction: column;
+    }
+}*/
+
+/*--------------footer-------------*/
+.footer{
+    background-color: #FDDFDA;
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+     margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.footer p{
+    margin-top: 10px;
+
+}
+.icons .fab{
+    color: #A52A2A;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 15px 0;
+}
+.fa-heart{
+     color: #A52A2A;
+}
+/*@media(max-width: 700px){
+    .footer{
+        width: 89%;
+        position: relative;
+        text-align: center;
+        /*margin: 70px 0;
+        margin-top: 30px;
+        padding: 20px;
+        top: 450px;
+    }
+}*/

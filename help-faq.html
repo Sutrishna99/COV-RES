@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+ <title>COV-RES</title>
+<link rel="stylesheet" href="help-faq.css"> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Kaisei+Opti:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/8dbee05428.js" crossorigin="anonymous"></script>
+
+</head>
+
+    <body>
+
+ <!------------------------- navbar --------------------------------->
+        <section class="header">
+        <nav>
+           <a href="help-faq.html"><img src="logoR.png"></a>
+
+            <!--------------------Nav-Bar------------------------->
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times"onclick="hideMenu()"></i>
+                <!-- <i class="fas fa-times" onclick="hideMenu()"></i>-->
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contactN.html">CONTACT US</a></li>
+                <li><a href="index.html">EXIT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        </section>
+
+ <!------------------------------ help ------------------------------>
+  <section class="help"> 
+        <h1>HELP-DESK:-</h1>
+    <div class="help-col">
+        <h3>GOVERNMENT HELPLINE NUMBERS</h3>
+        <p>Helpline Number: 91-11-23978046<br>Health Ministry: 1075<br>Child: 1098<br>Mental Health: 08046110007<br>Senior Citizens: 14567</p>
+    </div>
+   </section>
+  
+<!--------------------Prevention data with iamges------------------------->  
+<section class="Picture">
+       
+       <div class="row">
+            <div class="covid-col">
+                <img src="images/P1.jpg">
+            </div>
+
+            <div class="covid-col">
+                <img src="images/P2.jpg">
+            </div>
+
+            <div class="covid-col">
+                <img src="images/P3.png">
+            </div>
+
+            <div class="covid-col">
+                <img src="images/P4.jpg">
+            </div>
+        </div>
+
+</section>
+<!---------------------------------FAQ--------------------------------------->
+    <section class="FAQ">
+        <h2>FAQ-CENTER:-</h2><br>
+        <div class="faq-col">
+<h3><i class="far fa-hand-point-right"></i>Which age groups can register for vaccination on the Co-WIN portal?</h3>
+<br><p>->All beneficiaries aged 18 years and above can register for vaccination.</p>
+<br><h3><i class="far fa-hand-point-right"></i>Is online registration mandatory for Covid 19 vaccination?</h3>
+<br><p>->Vaccination Centres provide for a limited number of on-spot registration slots every day.Beneficiaries aged 45 years and above can schedule appointments online or walk-in to vaccination centres. Beneficiaries aged 18 years and above can schedule appointments online or walk-in to Government vaccination centres.However, beneficiaries aged 18-44 years should mandatorily register themselves and schedule appointment online before going to a Private vaccination centre.In general, all beneficiaries are recommended to register online and schedule vaccination in advance for a hassle-free vaccination experience.</p>
+<br><h3><i class="far fa-hand-point-right"></i>How many people can be registered in the Co-WIN portal through one mobile number?</h3>
+<br><p>->Up to 4 people can be registered for vaccination using the same mobile number.</p>
+<br><h3><i class="far fa-hand-point-right"></i>How can beneficiaries with no access to smart phones or computers manage online registration?</h3>
+<br><p>->Up to 4 people can be registered for vaccination using the same mobile number.Beneficiaries can take help from friends or family for online registration.</p>
+<br><h3><i class="far fa-hand-point-right"></i>Can I register for vaccination without Aadhaar card?</h3>
+<br><p>->Yes, you can register on Co-WIN portal using any of the following ID proofs:
+<br>
+a. Aadhaar card
+<br>
+b. Driving License
+<br>
+c. PAN card
+<br>
+d. Passport
+<br>
+e. Pension Passbook
+<br>
+f. NPR Smart Card
+<br>
+g. Voter ID(EPIC)
+<br>
+h. Unique Disability ID (UDID)
+<br>
+i. Ration Card</p>
+
+        </div>
+    </section>
+        
+<!-----------------------------------Footer-----------------------------------------> 
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Health Is Wealth<br>And We Believe It Strogly</p>
+        <div class="icons">
+             <i class="fab fa-facebook"></i>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-instagram"></i>
+             <i class="fab fa-linkedin"></i>
+        </div>
+             <p>Made with <i class="far fa-heart"></i> by team Cov-RES</p>
+         </section>
+        
+        
+        
+<!---------------------------JavaScript for Toggle Menu------------------------------->
+        <script>
+            var navlinks= document.getElementById("navlinks");
+         function showMenu(){
+                navlinks.style.right ="0";
+            }
+             function hideMenu(){
+                navlinks.style.right ="-200px";
+            }
+        </script>
+
+</body>
+</html>
